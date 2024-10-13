@@ -1,0 +1,39 @@
+# joint_limits.yaml allows the dynamics properties specified in the URDF to be overwritten or augmented as needed
+# Specific joint properties can be changed with the keys [max_position, min_position, max_velocity, max_acceleration]
+# Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
+#这个配置文件是一个ROS（机器人操作系统）控制器的YAML格式配置文件，定义了机器人的各个关节的速度和加速度限制。
+#文件的主要目的是覆盖或增强URDF（统一机器人描述格式）文件中指定的动力学属性。
+#通过这个配置，可以在不修改URDF的情况下动态调整关节的限制。
+joint_limits:
+  joint_1:
+  #速度限制
+    has_velocity_limits: true
+    max_velocity: 0.9 #1.032
+  #加速度限制  
+    has_acceleration_limits: true
+    max_acceleration: 1
+  joint_2:
+    has_velocity_limits: true
+    max_velocity: 0.4 #0.452
+    has_acceleration_limits: true
+    max_acceleration: 1
+  joint_3:
+    has_velocity_limits: true
+    max_velocity: 0.5 #0.618
+    has_acceleration_limits: true
+    max_acceleration: 1
+  joint_4:
+    has_velocity_limits: true
+    max_velocity: 0.4 #0.494
+    has_acceleration_limits: true
+    max_acceleration: 1
+  joint_5:
+    has_velocity_limits: true
+    max_velocity: 0.4 #0.494
+    has_acceleration_limits: true
+    max_acceleration: 1
+  joint_6:
+    has_velocity_limits: true
+    max_velocity: 1.2 #1.344
+    has_acceleration_limits: true
+    max_acceleration: 1

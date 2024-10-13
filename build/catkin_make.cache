@@ -1,0 +1,2 @@
+navi:probot_anno_moveit_config:probot_demo:probot_description:probot_gazebo:robot_control
+-DCATKIN_DEVEL_PREFIX=/home/ming/demo2/devel -DCMAKE_INSTALL_PREFIX=/home/ming/demo2/install -G Unix Makefiles

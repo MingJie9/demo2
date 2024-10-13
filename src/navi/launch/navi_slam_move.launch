@@ -1,0 +1,9 @@
+<launch>
+    <!-- 启动SLAM节点 -->
+    <include file="$(find navi)/launch/navi_slam.launch" />
+    <!-- 运行move_base节点 -->
+    <include file="$(find navi)/launch/navi_move_base.launch" />
+    <!-- 运行rviz -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find robot_control)/urdf/urdf/my_base_camera_laser.urdf.xacro" />
+    <node pkg="rviz" type="rviz" name="rviz"  />
+</launch>
